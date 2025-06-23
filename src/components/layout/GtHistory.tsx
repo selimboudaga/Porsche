@@ -8,7 +8,7 @@ import gt2 from '../../assets/images/gt2.jpg'
 import gt4back from '../../assets/images/gt4back.webp'
 import gt4 from '../../assets/images/gt4.png'
 
-import Timeline from './TimeLine'
+import Timeline from '../ui/TimeLine'
 const GtHistory = () => {
   const data = [
     {

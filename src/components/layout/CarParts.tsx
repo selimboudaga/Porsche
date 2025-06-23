@@ -1,4 +1,4 @@
-import ZoomParallax from "./ZoomParallax"
+import ZoomParallax from "../ui/ZoomParallax"
 
 const CarParts = () => {
   return (

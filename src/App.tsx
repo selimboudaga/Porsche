@@ -1,25 +1,34 @@
-import CarParts from "./components/ui/CarParts";
-import Cars from "./components/ui/Cars";
-import ConstructionTeam from "./components/ui/ConstructionTeam";
-import GtHistory from "./components/ui/GtHistory";
-import Hero from "./components/ui/Hero";
-import HorizontalScroll from "./components/ui/HorizontalScroll";
-import RaceTrack from "./components/ui/RaceTrack";
-import Trophies from "./components/ui/Trophies";
+import Home from "./pages/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Signup from "./pages/Signup";
+import Signin from "./pages/Signin";
+import VerifyEmail from "./pages/VerifyEmail";
+import { AuthProvider } from "./context/AuthContext";
+import NewPassword from "./pages/NewPassword";
+
 const App = () => {
   return (
     <div>
-      <Hero/>
-      <RaceTrack/>
-      <Trophies/>
-      <CarParts/>
-      <ConstructionTeam />
-      <Cars/>
-      <GtHistory />
-      <HorizontalScroll/>
-      
+      <BrowserRouter>
+        <AuthProvider>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/signin" element={<Signin />} />
+            <Route
+              path="/password-verification/:email"
+              element={<NewPassword />}
+            />
+            <Route
+              path="/email-verification/:email"
+              element={<VerifyEmail />}
+            />
+            
+          </Routes>
+        </AuthProvider>
+      </BrowserRouter>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

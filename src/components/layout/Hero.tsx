@@ -1,5 +1,5 @@
-import Spotlight from "./Spotlight";
 import porsche from "../../assets/images/porsche.png";
+import Spotlight from "../ui/Spotlight";
 const Hero = () => {
   return (
     <div className=" flex flex-col overflow-hidden w-full h-screen ">
@@ -22,7 +22,7 @@ const Hero = () => {
         {/* secondary container */}
         <div className="flex w-[80%] mx-auto">
           {/* content */}
-          <div className=" p-16">
+          <div className=" p-12">
             <h1 className="text-5xl font-bold text-[#AFB6BA]">520 hp</h1>
             <h2 className="  mt-4 text-2xl leading-tight  text-[#AFB6BA]">
               Max HorsePower

@@ -16,7 +16,7 @@ import c15 from "../../assets/images/c15.png";
 import c16 from "../../assets/images/c16.png";
 import c17 from "../../assets/images/c17.png";
 import c18 from "../../assets/images/c18.png";
-import ImageParallax from "./ImageParallax";
+import ImageParallax from "../ui/ImageParallax";
 const Cars = () => {
   const cars = [
     {

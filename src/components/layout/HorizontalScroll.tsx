@@ -1,4 +1,4 @@
-import HorizontalScrollCarousel from "./HorizontalScrollCarousel";
+import HorizontalScrollCarousel from "../ui/HorizontalScrollCarousel";
 import gt3R from "../../assets/images/gt3R.jpg";
 import trophies from "../../assets/images/trophies.jpg";
 import racet from "../../assets/images/racet.jpg";
